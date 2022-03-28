@@ -450,7 +450,7 @@
 		},
 		methods: {
 			getVideoList(id) { 
-				// uni.request({
+				// uni.request({ 
 				// 	url: 'http://api.52170.xin/video?page_size=20',
 				// 	dataType: 'json',
 				// 	success: res => {
