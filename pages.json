@@ -1,0 +1,139 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/index/allNav/allNav",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom"
+			}
+
+		},
+
+		{
+			"path": "pages/msg/msg",
+			"style": {}
+		}, {
+			"path": "pages/my/my",
+			"style": {}
+		}, {
+			"path": "pages/my/about",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/my/contact",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/my/history",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+            "path" : "pages/share/share",
+            "style": {
+            	"navigationBarTitleText": "泥燕直播",
+            	"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"subPackages": [{
+		"root": "pages/live",
+		"pages": [{
+			"path": "live",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom",
+				"mp-weixin": {
+					"usingComponents": {
+						"liveplayer": "plugin://live-plugins/vzan-video-component",
+						"vzan-im": "plugin://live-plugins/vzan-im-component"
+					}
+				}
+			}
+		}, {
+			"path": "specialTopic/specialTopic",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "allTopic/allTopic",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "liveImageText/liveImageText",
+			"style": {
+				"navigationBarTitleText": "泥燕直播",
+				"navigationStyle": "custom",
+				"mp-weixin": {
+					"usingComponents": {
+						"liveplayer": "plugin://live-plugins/vzan-video-component",
+						"vzan-im": "plugin://live-plugins/vzan-im-component"
+					}
+				}
+			}
+
+		}]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "泥燕直播",
+		// "navigationBarBackgroundColor": "#000000",
+		// "backgroundColor": "#000000",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		// "backgroundColor": "#000",
+		"color": "#A7A8AD",
+		"selectedColor": "#0681eb",
+		"list": [
+			// {
+			// 	"pagePath": "pages/live/live",
+			// 	"text": "首页"
+			// },
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/home_active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/img/tabbar/user.png",
+				"selectedIconPath": "static/img/tabbar/user_active.png"
+			}
+		]
+	}
+
+
+}
